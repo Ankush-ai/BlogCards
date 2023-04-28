@@ -1,23 +1,54 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
+  const blogObj={
+    title:"title",
+    description:"lorem ipsum dolor"
+    
+  }
+   const style={
+    color:'blue',
+    borderRadius:'5px',
+    boxShadow:'0px 2px 5px #ccc',
+    margin:'16px',
+    padding:'16px',
+    boxSizing:'border-box'
+  
+    
+}
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <div style={style}>
+      <h3>{blogObj.title}</h3>
+      <p>{blogObj.description}</p>
+
+     </div>
+     <div style={style}>
+      <h3>{blogObj.title}</h3>
+      <p>{blogObj.description}</p>
+
+     </div>
+     <div style={style}>
+      <h3>{blogObj.title}</h3>
+      <p>{blogObj.description}</p>
+
+     </div>
+
+     <div style={style}>
+      <h3>{blogObj.title}</h3>
+      <p>{blogObj.description}</p>
+
+     </div>
+     <div style={style}>
+      <h3>{blogObj.title}</h3>
+      <p>{blogObj.description}</p>
+
+     </div>
+      
+      
+      
+
     </div>
   );
 }
